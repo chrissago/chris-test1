@@ -20,7 +20,7 @@ public class ToggleButtonColour : MonoBehaviour
 	#region Non-Serialized Fields
 
 	[System.NonSerialized]
-	private int m_NextColour = 1;
+	private int m_NextColor = 1;
 
 	#endregion
 
@@ -53,8 +53,8 @@ public class ToggleButtonColour : MonoBehaviour
 
 	public void Toggle()
 	{
-		SetColour(m_NextColour);
-		m_NextColour = (m_NextColour + 1) % 2;
+		SetColour(m_NextColor);
+		m_NextColor = (m_NextColor + 1) % 2;
 	}
 
 	#endregion
