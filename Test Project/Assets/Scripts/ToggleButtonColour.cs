@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ToggleButtonColour : MonoBehaviour
-{
+public class ToggleButtonColour : MonoBehaviour {
 
 
 	#region Serialized Fields
@@ -12,6 +11,7 @@ public class ToggleButtonColour : MonoBehaviour
 	[SerializeField]
 	private List<Color> m_Colors;
 	[SerializeField] 
+
 	private Button m_TargetButton;
 
 	#endregion
@@ -29,7 +29,7 @@ public class ToggleButtonColour : MonoBehaviour
 
 	private void Start()
 	{
-		SetColour(0);
+		SetColor(0);
 	}
 
 	#endregion
@@ -37,14 +37,14 @@ public class ToggleButtonColour : MonoBehaviour
 
 	#region Methods
 
-	private void SetColour(int index)
+	private void SetColor(int index)
 	{
-		if (this.m_TargetButton == null || this.m_Colors.Count <= index)
+		if (m_TargetButton == null || m_Colors.Count <= index)
 		{
 			return;
 		}
 
-		Color c = this.m_Colors[index];
+		Color c = m_Colors[index];
 		ColorBlock block = m_TargetButton.colors;
 		block.normalColor = c;
 		block.highlightedColor = c;
@@ -53,7 +53,7 @@ public class ToggleButtonColour : MonoBehaviour
 
 	public void Toggle()
 	{
-		SetColour(m_NextColor);
+		SetColor(m_NextColor);
 		m_NextColor = (m_NextColor + 1) % 2;
 	}
 
