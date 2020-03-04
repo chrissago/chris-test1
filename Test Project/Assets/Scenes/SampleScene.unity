@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cca4330a99f94567985c0aa4b56a3be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colours:
-  - {r: 0.9150943, g: 0.7640174, b: 0.7640174, a: 1}
-  - {r: 0.5730242, g: 0.745283, b: 0.57712847, a: 1}
-  targetButton: {fileID: 869863021}
+  m_Colors:
+  - {r: 0.77929103, g: 0.59011215, b: 0.8396226, a: 1}
+  - {r: 0.9245283, g: 0.76421964, b: 0.21368816, a: 1}
+  m_TargetButton: {fileID: 869863021}
