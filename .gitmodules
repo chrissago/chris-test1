@@ -1,0 +1,3 @@
+[submodule "Test Project/Assets/LibraryName/chris-test2"]
+	path = Test Project/Assets/LibraryName/chris-test2
+	url = git@github.com:chrissago/chris-test2.git
